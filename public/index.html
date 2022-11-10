@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grissom Homes | Legacy Real Estate</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <style>
+        html, body{
+            overflow: hidden;
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="grid">
+        <div>
+            <Header class="header">
+                <a href='https://grissom.homes/'>
+                    <img src='./images/Legacy logo.png'/>
+                </a>
+                <h1>Tom/Alex Grissom REALTOR</h1>
+                
+                
+            </Header>
+        </div>
+         
+        
+        <div>
+            <div class="iframe">
+                <iframe
+                id="iframe" 
+                src="https://www.usamls.net/grissomhomes/" 
+                style="border:0px #ffffff none;" 
+                name="GrissomHomes" 
+                scrolling="yes" 
+                frameborder="1" 
+                marginheight="0px" 
+                marginwidth="0px" 
+                height="100%" 
+                width="100%" 
+                allowfullscreen="no">
+            </iframe>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        //CONGRATS! you found my sorce code. Visit TomGrissom.com to connect!
+
+        //Re writes the iFrame SRC based on the ending of url
+        var url = window.location.href
+        var lastpart = url.split("/").pop()
+        
+        var myIframe = document.getElementById("iframe")
+        var iframeSource = myIframe.getAttribute("src")
+        
+        console.log(lastpart)
+        console.log(iframeSource)
+
+        myIframe.setAttribute("src",iframeSource+lastpart)
+
+
+        </script>
+    </body>
+</html>

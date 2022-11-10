@@ -1,0 +1,4 @@
+To upload to firebase use commands below
+firebase login //to login to the account
+firebase init //to prep files for upload
+firebase deploy //to deploy to the firebase console - THIS REPO has been updated and is ready for deploy unless changes are made
